@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>RIZZA – Arroces del Mundo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; background:#fff; color:#222; line-height:1.6; }
+    header { text-align:center; padding:40px 20px; background:#1f3d2b; color:white; }
+    header img { width:160px; margin-bottom:20px; }
+    h1 { margin:0; font-size:48px; }
+    section { padding:60px 20px; max-width:1100px; margin:auto; }
+    h2 { color:#1f3d2b; font-size:32px; margin-bottom:20px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:30px; }
+    .card { border:1px solid #ddd; padding:25px; border-radius:10px; background:#fafafa; }
+    .card h3 { margin-top:0; color:#1f3d2b; }
+
+    /* HERO VIDEO NUEVO */
+    .hero-video {
+      position: relative;
+      height:80vh;
+      overflow:hidden;
+    }
+    .hero-video video {
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+    .hero-overlay {
+      position:absolute;
+      inset:0;
+      background: rgba(0,0,0,0.35);
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+      flex-direction:column;
+    }
+    .hero-text h1 {
+      font-size:60px;
+      margin:0;
+      animation: fadeInDown 1s ease forwards;
+    }
+    .hero-text .subtitle {
+      font-size:28px;
+      margin:10px 0;
+      animation: fadeInUp 1.2s ease forwards;
+    }
+    .hero-text .description {
+      font-size:18px;
+      max-width:700px;
+      margin:20px auto;
+      animation: fadeInUp 1.4s ease forwards;
+    }
+    .hero-text .btn {
+      display:inline-block;
+      margin:10px 15px;
+      padding:15px 35px;
+      background-color:#e6c97a;
+      color:#1f3d2b;
+      text-decoration:none;
+      border-radius:5px;
+      font-weight:bold;
+      transition: all 0.3s;
+    }
+    .hero-text .btn:hover { background-color:#d4b35d; }
+    .btn-secondary {
+      background-color: transparent;
+      border: 2px solid #e6c97a;
+      color: #e6c97a;
+    }
+    .btn-secondary:hover {
+      background-color:#e6c97a;
+      color:#1f3d2b;
+    }
+
+    @keyframes fadeInDown {
+      0% { opacity:0; transform:translateY(-30px); }
+      100% { opacity:1; transform:translateY(0); }
+    }
+    @keyframes fadeInUp {
+      0% { opacity:0; transform:translateY(30px); }
+      100% { opacity:1; transform:translateY(0); }
+    }
+
+    /* FOOTER Y DEMÁS */
+    footer { background:#111; color:#ccc; padding:40px 20px; text-align:center; font-size:14px; }
+    footer a { color:#e6c97a; text-decoration:none; }
+    img { width:100%; border-radius:12px; object-fit:cover; }
+
+    @media (max-width:768px) {
+      .hero-text h1 { font-size:40px; }
+      .hero-text .subtitle { font-size:20px; }
+      .hero-text .description { font-size:16px; }
+      .hero-text .btn { padding:10px 25px; margin:8px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <img src="file:///C:/Users/Tarde/Downloads/Screenshot%202026-01-29%2011.34.56.png" alt="Logo RIZZA">
+  <h1>RIZZA</h1>
+  <p>Arroces del mundo, rápidos y deliciosos</p>
+</header>
+
+<!-- HERO VIDEO NUEVO -->
+<section class="hero-video">
+  <video autoplay muted loop playsinline>
+    <source src="file:///C:/Users/Tarde/Downloads/grok-video-856812fc-d739-431d-807c-dff08156dfb3%20(1).mp4" type="video/mp4">
+    Tu navegador no soporta video.
+  </video>
+  <div class="hero-overlay">
+    <div class="hero-text">
+      <h1>RIZZA</h1>
+      <p class="subtitle">El McDonald's del arroz</p>
+      <p class="description">Explora arroces de todo el mundo, preparados al instante con sabor auténtico, textura perfecta y listos para llevar o disfrutar en nuestro local.</p>
+      <a href="#menu" class="btn">Ver menú</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONCEPTO -->
+<section>
+  <h2>Nuestro concepto</h2>
+  <p>RIZZA nace para revolucionar la comida rápida, convirtiendo al arroz en protagonista absoluto. 
+    Cada plato representa una cultura del mundo, desde el arroz chaufa peruano, pasando por la paella mediterránea, hasta el arroz jazmín tailandés y especialidades latinoamericanas. 
+    Nuestro concepto combina rapidez, eficiencia y sabor auténtico, utilizando procesos estandarizados que garantizan la misma calidad en cada local. 
+    Los clientes eligen su plato favorito en pantallas digitales, se prepara al momento con técnicas modernas de cocción y se puede disfrutar en el local o para llevar, manteniendo siempre textura, temperatura y presentación impecable. 
+    La experiencia RIZZA no solo es gastronómica, sino también visual y práctica: packaging pensado para mantener la calidad, menú claro, y un servicio ágil que hace que comer rápido sea cómodo y delicioso. 
+    Con RIZZA, la comida rápida se convierte en un viaje culinario internacional, accesible para todos y siempre memorable.</p>
+</section>
+
+<!-- GALERÍA DE IMÁGENES -->
+<section>
+  <h2>Nuestros platos</h2>
+  <div class="grid">
+    <img src="file:///C:/Users/Tarde/Downloads/a6c79589-b756-4966-989e-0e546ba3e5d8.jpg" alt="Arroz 1">
+    <p>Este plato es una deliciosa fusión de sabores que combina la cocina asiática con los ingredientes típicos de la gastronomía española. 
+        En él, se pueden apreciar unas jugosas gambas salteadas, que aportan un toque de mar y una textura crujiente. 
+        Estas gambas se han cocinado con una salsa de sabores intensos, probablemente a base de soja, jengibre y otros condimentos orientales. 
+        El plato se completa con una selección de verduras frescas, como pimientos, cebolla y brotes de soja, que le dan un toque de frescura y crujencia. 
+        El resultado es un plato colorido, lleno de contrastes de texturas y sabores, que transporta a los comensales a un viaje culinario por las costas de España y Asia.</p>
+    <img src="file:///C:/Users/Tarde/Downloads/38121ac7-8b74-40e9-8186-3135c9984032.jpg" alt="Arroz 2">
+    <p>Este plato presenta una deliciosa combinación de arroz, verduras y pollo. 
+        El arroz, bien cocido y suelto, se ha integrado a la perfección con los vegetales frescos, como zanahorias, guisantes y pimientos, que aportan color, crujencia y frescura. 
+        El pollo, tierno y sazonado, se ha incorporado de manera armoniosa, complementando los sabores y texturas del conjunto. 
+        Este plato de arroz frito asiático ofrece un equilibrio nutricional y una experiencia gastronómica sencilla pero deliciosa, ideal para aquellos que buscan una comida saludable y satisfactoria.</p>
+    <img src="file:///C:/Users/Tarde/Downloads/319e5124-6c6a-4d16-b24c-3e2d23f68630.jpg" alt="Arroz 3">
+    <p>En este plato, se ha combinado el sabor intenso y ahumado del pollo al curry con las verduras típicas de la cocina mediterránea. 
+        El curry, con sus notas de especias como la cúrcuma, el comino y la pimienta, aporta un toque exótico y un profundo sabor al plato. 
+        Las verduras frescas, como pimientos, tomates y hierbas aromáticas, contrastan con la riqueza del curry, brindando frescura y equilibrando los sabores. 
+        El resultado es un plato lleno de contrastes, donde los aromas y sabores de Oriente se funden con los ingredientes del Mediterráneo, creando una experiencia culinaria única y deliciosa.
+
+</p>
+    <img src="file:///C:/Users/Tarde/Downloads/grok-image-9a6343c5-4a1f-43e5-aed9-5ee4e9e38660.png" alt="Proceso RIZZA">
+    <p>En esta foto podéis observar a uno de nuestros chefs cocinando el arroz.</p>
+  </div>
+</section>
+
+<!-- MENÚ -->
+<section id="menu">
+  <h2>Menú de arroces</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Asia</h3>
+      <ul>
+        <li>Arroz Chaufa Peruano</li>
+        <li>Arroz frito asiático</li>
+        <li>Arroz jazmín con pollo teriyaki</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Mediterráneo</h3>
+      <ul>
+        <li>Paella de pollo</li>
+        <li>Arroz del señoret</li>
+        <li>Arroz vegetal mediterráneo</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Latinoamérica</h3>
+      <ul>
+        <li>Arroz cubano</li>
+        <li>Arroz con frijoles negros</li>
+        <li>Arroz criollo</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 RIZZA – Arroces del Mundo</p>
+  <p>
+    <a href="#">Aviso legal</a> ·
+    <a href="#">Política de privacidad</a> ·
+    <a href="#">Contacto</a>
+  </p>
+</footer>
+
+</body>
+</html>
